@@ -1,27 +1,27 @@
 # 定义查询方法
 type Query {
-  bookById(id: ID): [Book]
-  categoryById(id: ID): Book
+    bookById(id: ID): [Book]
+    categoryById(id: ID): Book
 }
 
 # 定义Book对象的结构
 type Book {
-  id: ID
-  name: String
-  pageCount: Int
-  author: Author
-  category: Category
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+    category: Category
 }
 
 # 定义Category对象的结构
 type Category {
-  id: ID
-  name: String
+    id: ID
+    name: String
 }
 
 # 定义Author对象的结构
 type Author {
-  id: ID
-  firstName: String
-  lastName: String
+    id: ID
+    firstName: String
+    lastName: String
 }
